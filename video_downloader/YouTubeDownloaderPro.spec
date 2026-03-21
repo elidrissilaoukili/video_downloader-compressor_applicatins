@@ -5,7 +5,7 @@ a = Analysis(
     ['youtube_downloader.py'],
     pathex=[],
     binaries=[('ffmpeg.exe', '.'), ('ffprobe.exe', '.')],
-    datas=[],
+    datas=[('icon.ico', '.')],
     hiddenimports=['customtkinter', 'yt_dlp'],
     hookspath=[],
     hooksconfig={},
@@ -35,4 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=['icon.ico'],
 )
